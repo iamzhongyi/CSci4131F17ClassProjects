@@ -1,0 +1,131 @@
+	body{background-color: #5E6C93;
+		color: #ffffff}
+	h1 {
+		text-align: center;
+	}
+	td.day span{
+		font-style:normal;
+		font-weight: bold;
+		color:#EBE9DA;
+	}
+
+	span{
+		font-style:italic
+	}
+
+	nav {background-color: #EBE9DA;
+		text-align: center;
+		width: 56%;
+		margin:auto;
+	}
+	#table table, #table th, #table td {
+    	border: 2px solid white;
+    	border-collapse: collapse;
+    	margin:3px;
+		padding:5px;
+    	color: #ffffff;
+    	text-align: center;
+	}
+	#table table{		
+		width: 56%;
+		margin-left: 22%;
+	}
+	#table img{
+		width:70px;
+		visibility: hidden;
+	}
+	#table tr:nth-child(odd){background-color: #DD4552}
+	#table tr:nth-child(even){background-color: #575b67}
+
+	.buttom{
+		font-style:italic;
+		text-align: center;
+		width: 56%;
+		margin:auto;
+		}
+	.form{
+			text-align: center;
+    	background-color: #DD4552;
+    	padding: 20px;
+    	padding-bottom: 40px;
+    	margin:6px;
+    	margin-left:22%;
+    	margin-right:22%;
+	}
+	#twit{
+		float:right;
+		width: 20%;
+		margin-right: 1%;
+		
+	}
+	input[type="text"]{
+    	color:#000000;
+	}
+
+	.scroll-left {
+		height: 25px;
+		overflow: hidden;
+		position: relative;
+		width: 56%;
+		margin:auto;
+	}
+	.scroll-left p {
+		 position: absolute;
+		 width: 150%;
+		 height: 100%;
+		 margin: 0;
+		 line-height: 25px;
+		 /* Starting position */
+		 -moz-transform:translateX(100%);
+		 -webkit-transform:translateX(100%);
+		 transform:translateX(100%);
+		 /* Apply animation to this element */
+		 -moz-animation: scroll-left 15s linear infinite;
+		 -webkit-animation: scroll-left 15s linear infinite;
+		 animation: scroll-left 20s linear infinite;
+	}
+	@keyframes scroll-left {
+	 0%   {
+	 -moz-transform: translateX(100%); /* Browser bug fix */
+	 -webkit-transform: translateX(100%); /* Browser bug fix */
+	 transform: translateX(100%);
+	 }
+	 100% {
+	 -moz-transform: translateX(-100%); /* Browser bug fix */
+	 -webkit-transform: translateX(-100%); /* Browser bug fix */
+	 transform: translateX(-100%);
+	 }
+	}
+
+	html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+	#map {
+		height: 50%;
+		width: 56%;
+    	margin-left:22%;
+		color: #000000;		
+      }
+      #right-panel {
+        font-family: 'Roboto','sans-serif';
+        color: #000000;
+        line-height: 30px;
+        padding-left: 10px;
+      }
+
+      #right-panel i {
+        font-size: 12px;
+      }
+      #right-panel {
+
+        height: 60%;
+        float: right;
+        width: 20%;
+		margin-right: 1%;
+      }
+      #right-panel table{
+      	color: #ffffff;
+      	background-color: #DD4552;
+      }

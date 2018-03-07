@@ -1,0 +1,90 @@
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: #5e6c93;
+	color: #ffffff;
+}
+td.day span {
+	font-style: normal;
+	font-weight: bold;
+	color: #ebe9da;
+}
+span {
+	font-style: italic;
+}
+.error {
+	color: #00ffff;
+	font-style: italic;
+}
+nav {
+	background-color: #ebe9da;
+	text-align: center;
+	width: 56%;
+	margin: auto;
+}
+#calendar table,
+#calendar th,
+#calendar td {
+	border: 2px solid white;
+	border-collapse: collapse;
+	margin: 3px;
+	padding: 5px;
+	color: #ffffff;
+	text-align: center;
+}
+#calendar table {
+	margin-left: 22%;
+}
+#calendar tr:nth-child(odd) {
+	background-color: #dd4552;
+}
+#calendar tr:nth-child(even) {
+	background-color: #575b67;
+}
+
+#userlist table,
+#userlist td {
+	border: 2px solid white;
+	border-collapse: collapse;
+	border-radius: 5px;
+	margin: 3px;
+	padding: 5px;
+	color: #ffffff;
+	text-align: center;
+}
+#userlist tr:nth-child(odd) {
+	background-color: #dd4552;
+}
+#userlist tr:nth-child(even) {
+	background-color: #575b67;
+}
+
+.centertext {
+	font-style: italic;
+	text-align: center;
+	width: 56%;
+	margin: auto;
+}
+.form {
+	text-align: center;
+	background-color: #dd4552;
+	padding: 20px;
+	padding-bottom: 40px;
+	margin: 6px;
+	margin-left: 22%;
+	margin-right: 22%;
+}
+.float_left {
+	float: left;
+}
+input[type="text"] {
+	color: #000000;
+}
+#map {
+	height: 800px;
+	width: 1000px;
+	margin: auto;
+	color: #000000;
+}

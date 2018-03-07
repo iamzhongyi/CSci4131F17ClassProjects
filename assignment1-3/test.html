@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Test-My Calendar</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </style>
+
+  </head>
+<body>
+	<h1>My Calendar</h1> 
+	<nav>
+		<a href="calendar.html">My Calendar</a> |
+		<a href="form.html">Form input</a> 
+	</nav>
+	<div class = "scroll-left">
+		<p id = "scroll"></p>		
+	</div>
+	  	<div class = "form">
+  		<form>
+  			<p>
+  				<label>Radius:
+  				<input id = "radius" name = "radius" type = "text">
+  				</label>
+  				<button type='button' id = "findr">Find Nearby Resturants</button>
+  			</p>
+  			<p>
+  				<lable>Destination:
+  					<input id = "destination" name = "destination" type = "text">
+  				</lable>
+  				<button type='button' id = "findd">Get Direction</button>
+  			</p>
+  			<p>
+  				<input type="radio" name="travel_mode" value="WALKING"> Walking
+				<input type="radio" name="travel_mode" value="DRIVING" checked> Driving
+				<input type="radio" name="travel_mode" value="TRANSIT"> Transit
+  				<input type="radio" name="travel_mode" value="BICYCLING"> Bicycle
+  			</p>
+  		</form>
+  	</div>
+	</table>
+	<div id="map"></div>
+	<div class = "buttom"><p>This page hase been tested in Chrome and Internet Exploer</p></div>
+	<script src="mapjs.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvP0MnvvcoAECd4t4JMyY1KWh-z14PRxo&callback=initMap"
+    async defer></script>
+
+</body>
+</html>

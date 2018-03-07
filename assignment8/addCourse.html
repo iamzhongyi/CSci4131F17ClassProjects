@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Add Course</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="javascript.js"></script>
+	<script type="text/javascript">
+  	function Redirect() {
+      window.location="logout.php";
+    }
+	</script>
+</head>
+<body>
+	</div>
+	<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+      <li><a href="/"><b>Spring 18 Course Offering</b></a></li>
+      <li><a href="addCourse.html"><b>Add Course</b></a></li>
+      </ul>
+    </div>
+	</nav>
+  <div class="container">
+		<form name = "myform" method="post" action = "/postCourse">
+      <table class = "table">
+	      <tr>
+					<td>Couse Id</td>
+					<td><input type="text" name="id" value = ""></td>
+				</tr>
+				<tr>
+					<td>Couse Title</td>
+					<td><input type="text" name="title" value = ""></td>
+				</tr>
+				<tr>
+					<td>Couse Credit</td>
+					<td><input type="text" name="credit" value = ""></td>
+				</tr>
+				<tr>
+					<td>Couse Term</td>
+					<td><input type="text" name="term" value = ""></td>
+				</tr>
+        <tr>
+					<td>Couse Instructor</td>
+					<td><input type="text" name="instructor" value = "">
+          <br><br><input type="submit" name="Submit" value="Submit"></td>
+				</tr>
+			</table>
+    </form>
+	</div>
+</body>
+</html>

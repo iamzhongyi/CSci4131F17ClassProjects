@@ -1,0 +1,12 @@
+{
+  "name": "zhong305_hw08",
+  "version": "0.0.0",
+  "description": "Assignment 8",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "zhong305",
+  "license": "BSD"
+}

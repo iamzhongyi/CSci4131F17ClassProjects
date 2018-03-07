@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Calendar Input</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="javascript.js"></script>
+</head>
+<body>
+	<h1>Calendar Input</h1>
+	<nav>
+		<a href="calendar.html">My Calendar</a> |
+		<a href="form.html">Form input</a> 
+	</nav>
+	<div class = "form">
+		<form onsubmit="return validateInput()" name = "myform" method="get" action = "http://www-users.cselabs.umn.edu/~tulaj001/form_handler.php">
+		<p>
+			<label>Event Name:
+			<input name = "eventname" type = "text" required>
+			</label>
+		</p>
+		<p>
+			<label>Start Time:
+			<input name = "starttime" type = "time" required>
+			</label>
+		</p>
+		<p>
+			<label>End Time:
+			<input name = "endtime" type = "time" required>
+			</label>
+		</p>
+		<p>
+			<label>Location:
+			<input name = "location" type = "text" required>
+			</label>
+		</p>
+		<p>
+			<label>Day of the week:
+			<select name = "day" required>
+				<option value = "Monday">Mon</option>
+				<option value = "Tuesday">Tue</option>
+				<option value = "Wendsday">Wed</option>
+				<option value = "Thursday">Thu</option>
+				<option value = "Friday">Fri</option>
+			</select>
+			</label>
+		</p>
+		<p><input type = "submit" value = "Submit" ></p>
+		</form>
+	</div>
+	<div class = "buttom">This page hase been tested in Chrome and Internet Exploer</div>
+</body>
+</html>

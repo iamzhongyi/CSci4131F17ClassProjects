@@ -6,7 +6,7 @@ Basic HTML, Javascript, CSS and a bit google map.
 A simple python server accepting http request and send back response.
 ### Assignment 5-7
 Server side things in php and mysql. 
-A demo can be see here: http://www-users.cselabs.umn.edu/~zhong305/calendar.php
+A demo can be see [here] (http://www-users.cselabs.umn.edu/~zhong305/calendar.php)
 You can login with login: admin, password: Admin123
 - Calendar User login/logout/sign up is implemented.
 - Calendar content no more hard code, corresponds to the course added through form.

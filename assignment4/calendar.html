@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> My Calendar</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </style>
+
+  </head>
+  <body>
+    <h1>My Calendar</h1>
+  	<nav>
+  		<a href="calendar.html">My Calendar</a> |
+  		<a href="form.html">Form input</a>
+  	</nav>
+  	<div class = "scroll-left">
+  		<p id = "scroll"></p>
+	</div>
+
+
+  	<table id = cTable>
+  		<thead>
+  			<tr>
+              <th>Day</th>
+              <th>Class 1</th>
+              <th>Class 2</th>
+              <th>Class 3</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+  			<tr id = Monday>
+  				<td class = day><span>Mon</span></td>
+  				<td class = Ford><p><span>9:05-9:55 AM</span><br>MATH4242-Ford B80</p>
+  					<img src="" alt=""></td>
+  				<td class = Mole><p><span>11:15-12:05 PM</span><br>CSCI2041-Mole 3-210</p>
+  					<img src="" alt=""></td>
+  				<td class = Fraser><p><span>1:00-2:15 PM</span><br><a href ="https://ay17.moodle.umn.edu/course/view.php?id=5678">CSCI4131-Fraser 101</a></p>
+  					<img src="" alt=""></td>
+  			</tr>
+  			<tr id = Tuesday>
+  				<td class = day><span>Tue</span></td>
+  				<td class = Tate><p><span>9:45-11:15 AM</span><br>EE4363-Tate 105</p>
+  					<img src="" alt=""></td>
+  				<td class = KH><p><span>12:20-1:10 PM</span><br>CSCI2041-KH 1-250</p>
+  					<img src="" alt=""></td>
+  				<td class = Akerman><p><span>1:25-2:15 PM</span><br>EE3102-Akerman 319</p>
+  					<img src="" alt=""></td>
+  			</tr>
+  			<tr id = Wednesday>
+  				<td class = day><span>Wed</span></td>
+  				<td class = Ford><p><span>9:05-9:55 AM</span><br>MATH4242-Ford B80</p>
+  					<img src="" alt=""></td>
+  				<td class = Mole><p><span>11:15-12:05 PM</span><br>CSCI2041-Mole 3-210</p>
+  					<img src="" alt=""></td>
+  				<td class = Fraser><p><span>1:00-2:15 PM</span><br>CSCI4131-Fraser 101</p>
+  					<img src="" alt=""></td>
+  			</tr>
+  			<tr id = Thursday>
+  				<td class = day><span>Thu</span></td>
+  				<td class = Tate><p><span>9:45-11:15 AM</span><br>EE4363-Tate 105</p>
+  					<img src="" alt=""></td>
+  				<td class = KH><p><span>12:20-1:10 PM</span><br>EE3102-KH 3-144</p>
+  					<img src="" alt=""></td>
+  				<td><p>-</p></td>
+  			</tr>
+  			<tr id = Friday>
+  				<td class = day><span>Fri</span></td>
+  				<td class = Ford><p><span>9:05-9:55 AM</span><br>MATH4242-Ford B80</p>
+  					<img src="" alt=""></td>
+  				<td class = Mole><p><span>11:15-12:05 PM</span><br>CSCI2041-Mole 3-210</p>
+  					<img src="" alt=""></td>
+  				<td><p>-</p></td>
+  			</tr>
+  		</tbody>
+  	</table>
+
+  	<div class = "form">
+  		<form>
+  			<p>
+  				<label>Radius:
+  				<input id = "radius" name = "radius" type = "text">
+  				</label>
+  				<button type='button' id = "findr">Find Nearby Resturants</button>
+  			</p>
+  			<p>
+  				<lable>Destination:
+  					<input id = "destination" name = "destination" type = "text">
+  				</lable>
+  				<button type='button' id = "findd">Get Direction</button>
+  			</p>
+  			<p>
+  				<input type="radio" name="travel_mode" value="WALKING"> Walking
+				<input type="radio" name="travel_mode" value="DRIVING" checked> Driving
+				<input type="radio" name="travel_mode" value="TRANSIT"> Transit
+  				<input type="radio" name="travel_mode" value="BICYCLING"> Bicycle
+  			</p>
+  		</form>
+  	</div>
+    <div id="map"></div>
+    <div class = "buttom"><p>This page hase been tested in Chrome and Internet Exploer</p></div>
+    <script src="javascript.js"></script>
+    <script src="mapjs.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvP0MnvvcoAECd4t4JMyY1KWh-z14PRxo&callback=initMap&libraries=places,visualization" async defer></script>
+  </body>
+</html>
